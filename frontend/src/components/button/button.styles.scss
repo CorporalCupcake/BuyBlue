@@ -1,0 +1,32 @@
+@import "../../SCSS/partials/variables";
+
+.button {
+    height: 4rem;
+    padding: .5rem 2rem;
+    margin-top: 2rem;
+    box-sizing: border-box;
+
+    border-radius: 8px;
+
+    font-family: $roboto;
+    font-weight: 500;
+    font-size: 1.75rem;
+
+    border: 2px solid $primary;
+    color: $primary;
+    background-color: $background;
+
+    transition: all .2s;
+
+    &:hover,
+    &:focus {
+        // border: 2px solid $background;
+        color: $background;
+        background-color: $primary;;
+    }
+
+    &:active {
+        transform: translateY(2px);
+    }
+
+}

@@ -1,0 +1,30 @@
+:root {
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    color: #121212;
+    background-color: #121212;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box; // Ignore padding and border in element height and width calculations
+    font-size: 62.5%; // Set 1rem = 10px, 10px/16px = 62.5%
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::-moz-focus-inner {
+    border: 0;
+}
