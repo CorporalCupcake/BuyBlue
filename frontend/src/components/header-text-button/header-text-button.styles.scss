@@ -1,0 +1,15 @@
+@import '../../SCSS/partials/variables';
+
+.header-text-button {
+    color: $primary;
+    background-color: $background;
+
+    text-transform: uppercase;
+    font-family: $raleway;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    padding: 2.5rem 2rem;
+
+    cursor: pointer;
+}

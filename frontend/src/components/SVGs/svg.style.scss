@@ -1,0 +1,9 @@
+@import '../../SCSS/partials/variables.scss';
+
+.svg {
+    fill: none;
+    stroke: $primary;
+    height: 2.75rem;
+
+    cursor: pointer;
+}

@@ -1,8 +1,10 @@
 import React from 'react';
 
-const HeaderTextButton = () => (
-    <div className="header">
+import './header-text-button.styles.scss';
 
+const HeaderTextButton = ({ text }) => (
+    <div className="header-text-button">
+        {text}
     </div>
 )
 

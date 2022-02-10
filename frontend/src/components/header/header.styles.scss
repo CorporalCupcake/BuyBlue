@@ -1,0 +1,33 @@
+@import "../../SCSS/partials/variables";
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__text-menu {
+        width: 35%;
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__logo {
+        width: 30%;
+        font-family: $jacquesFrancois;
+        font-size: 4.5rem;
+        text-align: center;
+    }
+
+    &__icon-menu {
+        width: 35%;
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
