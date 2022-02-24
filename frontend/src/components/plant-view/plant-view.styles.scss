@@ -1,0 +1,114 @@
+@import "../../SCSS/partials/variables.scss";
+@import "../../SCSS/partials/mixins.scss";
+@import "../../SCSS/partials/animations.scss";
+
+.PlantView {
+    cursor: pointer;
+
+    position: relative;
+
+    margin-left: 1.2rem;
+    background-color: $background;
+    display: flex;
+    flex-direction: column;
+    height: 38rem;
+    width: 28rem;
+    border: 0.15rem solid transparent;
+    border-radius: 0.8rem;
+
+    transition: all 0.12s ease-in;
+
+    &__image {
+        background-color: inherit;
+
+        border-radius: inherit;
+
+        object-fit: cover;
+    }
+
+    &__description {
+        background-color: inherit;
+
+        padding-left: 1.2rem;
+
+        border-bottom-right-radius: 0.8rem;
+        border-bottom-left-radius: 0.8rem;
+
+        overflow: hidden;
+
+        
+        &>* { // Set the background color as transparent for all immediate children
+            background-color: inherit;
+        }
+
+        &__name {
+            @include font($raleway, 500, 1.7rem);
+            text-transform: uppercase;
+
+            padding-top: 1rem;
+        }
+
+        &__descriptor {
+            @include font($raleway, 500, 1.5rem);
+            text-transform: capitalize;
+
+            padding-top: 0.8rem;
+            padding-bottom: 2rem;
+        }
+
+        &__price {
+            @include font($plexSerif, 700, 1.7rem);
+            text-transform: capitalize;
+
+            padding-bottom: 1rem;
+        }
+
+    }
+
+    // &:hover {
+    //     background-color: $background-dark-1;
+    //     border: 1.5px solid $primary;
+    //     box-shadow: 5px 10px $primary-light-3;
+    // }
+
+}
+
+.PlantView::after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+    height: inherit;
+    width: inherit;
+    background-color: blue;
+    // transform: scaleY(1);
+    transition: all 1s ease-in-out;
+    // transition: transform .2s,
+    //             width .4s cubic-bezier(1,0,0,1) .2s,
+    //             background-color .1s;
+    
+}
+
+.PlantView:hover::after {
+    opacity: 1;
+    // transform: scaleY(1);
+    width: 100%;
+    animation: spring-button-bounce-keyframes;
+    // transform: translateX(5rem);
+}
+
+@keyframes spring-button-bounce-keyframes {
+    0% {
+        transform: translateY(2rem);
+    }
+
+    100% {
+        transform: translateY(20rem);
+    }
+}

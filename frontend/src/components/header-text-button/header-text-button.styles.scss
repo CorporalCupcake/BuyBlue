@@ -12,4 +12,20 @@
     padding: 2.5rem 2rem;
 
     cursor: pointer;
+
+    transition: all 0.2s ease-in;
+
+    &:not(:first-child) {
+        margin-left: 1rem;
+    }
+
+    &:first-child {
+        margin-left: 0;
+    }
+    
+
+    &:hover {
+        color: $background;
+        background-color: $primary;
+    }
 }

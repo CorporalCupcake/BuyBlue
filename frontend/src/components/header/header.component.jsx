@@ -1,6 +1,7 @@
 import React from 'react';
 import './header.styles.scss';
 
+// Importing SVGs
 import ShoppingCartSVG from '../SVGs/Components/shopping-cart.svg.jsx';
 import UserCircleSVG from '../SVGs/Components/user.svg.jsx';
 import SearchSVG from '../SVGs/Components/search.svg'

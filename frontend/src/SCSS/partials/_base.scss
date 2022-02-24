@@ -19,6 +19,10 @@
     font-size: 62.5%; // Set 1rem = 10px, 10px/16px = 62.5%
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;

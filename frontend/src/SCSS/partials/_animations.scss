@@ -1,0 +1,11 @@
+@mixin spring-button-bounce-keyframes {
+    @keyframes spring-button-bounce-keyframes {
+        0% {
+            transform: translateY(2rem);
+        }
+
+        100% {
+            transform: translateY(20rem);
+        }
+    }
+}

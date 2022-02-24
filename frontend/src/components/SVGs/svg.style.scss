@@ -4,6 +4,14 @@
     fill: none;
     stroke: $primary;
     height: 2.75rem;
-
+    background-color: $background;
+    
     cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: $primary;
+        stroke: $background;
+    }
 }
